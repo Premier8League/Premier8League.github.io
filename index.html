@@ -1,7 +1,100 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+<head>
+    <title>Lucas's Blog</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Lucas is a Master candidate at SJTU.'>
+    <!-- A decent browser will parse this fine:
+         https://webmasters.stackexchange.com/questions/92744. -->
+    <meta name='keywords' content='
+        machine learning,
+        deep learning,
+        computer science
+    '>
+    <meta name='author' content='Lucas'>
+    <!-- <link rel='shortcut icon' href='assets/icon_white.png?v=e' />  -->
+    <link rel='shortcut icon' type="image/png" href="/assets/favicon_white.png?" >
+    <link href='/css/blog.css' rel='stylesheet'>
+
+    <script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  jax: ['input/TeX', 'output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    extensions: ['color.js']
+  },
+  messageStyle: 'none',
+  'HTML-CSS': { preferredFont: 'TeX', availableFonts: ['STIX','TeX'] }
+});
+</script>
+
+<script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML' type='text/javascript'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+</head>
+<body>
+    <div class='nav'>
+    <ul class='wrap'>
+        <li><a href='/'>Home</a></li>
+        <!-- <li><a href='/blog'>Blog</a></li>
+        <li><a href='/feed.xml'>RSS</a></li> -->
+    </ul>
+</div>
+
+    <div id='blog' class='wrap'>
+        <div id='intro'>
+            <div class='figure'>
+                <img src="/assets/images/first-flight.jpg" style="width: 100%; display: block; margin: 0 auto;"/>
+            </div>
+            <div class='quote'>
+                <p style="text-align:center;">It is possible to fly without motors, but not without knowledge and skill.</p>
+                <p style="text-align:center;"> - Wright Brothers</p>
+            </div>
+        </div>
+        <div id='posts' class='section'>
+            
+                <div class='post-row'>
+                    <p class='post-title'>
+                        <a href="/blog/2020/08/11/logistic-regression/">
+                            
+                            Logistic Regression
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        11 August 2020
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Owing to its simplicity and parallelization, logistic regression has become the go-to tool for many machine learning tasks. By exploring from mathematical dimension, this post helps you to gain a better understanding of the algorithm.
+                    
+                </p>
+                <span class='hidden'>1</span>
+            
+                <div class='post-row'>
+                    <p class='post-title'>
+                        <a href="/blog/2020/07/24/when-recommendation-meets-gan/">
+                            
+                            When Recommendation meets GAN
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        24 July 2020
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Although the most successful demand of GAN was image generation, it also has great potential to achieve more promising results in other domains, one of which is Recommendation System.
+                    
+                </p>
+                <span class='hidden'>2</span>
+            
+        </div>
+    </div>
+</body>
 </html>
